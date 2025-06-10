@@ -1,5 +1,5 @@
 let credentials = {
-  // Substitua pelos dados de autenticação do Cassandra
+  // Substitua pelos dados de conexão
 };
 
 import { Client } from "cassandra-driver";
@@ -11,11 +11,11 @@ import { Client } from "cassandra-driver";
 function connectToCassandra() {
   const client = new Client({
     cloud: {
-      secureConnectBundle: "caminho/para/seu/secure-connect-database.zip", // Substitua pelo caminho do seu bundle
+      secureConnectBundle: 'path/to/secure-connect-database_name.zip', // Substitua pelo caminho do seu bundle de conexão segura
     },
     credentials: {
-      username: credentials.clientID,
-      password: credentials.clientSecret,
+      username: credentials.clientId,
+      password: credentials.secret,
     },
   });
   return client;
