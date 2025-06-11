@@ -1,5 +1,7 @@
 let credentials = {
-  // Substitua pelos dados de conexão
+  "clientId": "cIeEjufAclKhIodqNgAwjYvg",
+  "secret": "hGHO+nW19KK-Oj,QerGxXnuzcZD0o4kEM7T4CvGxIETqbIEbl7PSApcp4pMO6Y_M+gwClbJ+XR2zNhbmk21qx-G0.pzp9n8zatdi,psxQHQAHIjK69q4.GuP_D6SsdHR",
+  "token": "AstraCS:cIeEjufAclKhIodqNgAwjYvg:ccfd225605dd914d275f7a680c5e011ea28c42fba8f42fefd25371ad4881f14e"
 };
 
 import { Client } from "cassandra-driver";
@@ -11,7 +13,7 @@ import { Client } from "cassandra-driver";
 function connectToCassandra() {
   const client = new Client({
     cloud: {
-      secureConnectBundle: 'path/to/secure-connect-database_name.zip', // Substitua pelo caminho do seu bundle de conexão segura
+      secureConnectBundle: "C:\\Users\\Guilherme\\Desktop\\Faculdade\\Repositorio_De_Listas_e_Trabalhos_CC\\5_Semestre\\Banco_De_Dados\\T3\\banco_mv3_pt1\\DBs\\CassandraDB\\secure-connect-cassandradb.zip",
     },
     credentials: {
       username: credentials.clientId,
