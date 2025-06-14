@@ -19,6 +19,7 @@ function connectToCassandra() {
       username: credentials.clientId,
       password: credentials.secret,
     },
+    keyspace: 'employees' // <-- Adicione esta linha com o nome do seu keyspace
   });
   return client;
 }
