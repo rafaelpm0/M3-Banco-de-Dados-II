@@ -5,7 +5,7 @@ import { Sequelize } from 'sequelize';
  * @returns {Sequelize} - Instância do Sequelize conectada ao banco de dados.
  */
 export function connectToDatabase() {
-  const sequelize = new Sequelize('employees', 'root', 'root', {
+  const sequelize = new Sequelize('employees', 'root', '1234', {
     host: 'localhost',
     dialect: 'mysql',
     logging: false,

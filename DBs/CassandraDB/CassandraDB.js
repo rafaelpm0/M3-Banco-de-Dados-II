@@ -13,7 +13,7 @@ import { Client } from "cassandra-driver";
 function connectToCassandra() {
   const client = new Client({
     cloud: {
-      secureConnectBundle: "C:\\Users\\Guilherme\\Desktop\\Faculdade\\Repositorio_De_Listas_e_Trabalhos_CC\\5_Semestre\\Banco_De_Dados\\T3\\banco_mv3_pt1\\DBs\\CassandraDB\\secure-connect-cassandradb.zip",
+      secureConnectBundle: "C:\\Users\\User\\Downloads\\M3-Banco-de-Dados-II\\DBs\\CassandraDB\\secure-connect-cassandradb.zip",
     },
     credentials: {
       username: credentials.clientId,
