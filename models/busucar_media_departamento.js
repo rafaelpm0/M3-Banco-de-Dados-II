@@ -52,5 +52,6 @@ async function importAvgSalariesToCassandra() {
   }
 }
 
+
 // Teste de execução
 importAvgSalariesToCassandra();
